@@ -1,0 +1,9 @@
+debug*.txt
+*/cache
+src
+*/Config/.cfg
+*/Exception/UserPage/.html
+*/Exception/UserPage/ajax/.html
+*/Admin/.cfg
+*/Test/Panel/.cfg
+*/Http/Event/.cfg
