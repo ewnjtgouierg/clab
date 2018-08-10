@@ -2,27 +2,41 @@
 	{
 		margin: 0 20%;
 	}
+.top-left-corner
+	{
+		padding: 50px 0 0 50px;
+	}
 #logo
 	{
-		color: gray;
-		font-size: 30px;
+		font-family: 'EtelkaNarrowMedium';
+		font-size: 50px;
+		color: #707070;
 		text-transform: uppercase;
-		font-weight: bold;
 		display: block;
 	}
 .city
 	{
 		display: block;
 		color: #2c5e76;
-		font-size: 20px;
+		font-size: 30px;
+		letter-spacing: 10px;
+		font-family: 'PFDinDisplayPro-Regular';
 	}
 .slide .phone
 	{
+		font-size: 20px;
 		color: #2c5e76;
 		display: block;
+		font-family: 'PFDinDisplayPro-Regular';
+	}
+#slideshow h1
+	{
+		font-size: 28px;
+		text-transform: uppercase;
 	}
 #slideshow .text
 	{
+		font-family: 'DINPro-Light';
 		padding: 20px;
 		color: white;
 		background: url('net-bg.png');

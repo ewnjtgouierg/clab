@@ -9,9 +9,11 @@ use Page_Content;
 				?>
 				<div id='slideshow'>
 					<div class='slide'>
-						<a id='logo' link='/'>Concretelab</a>
-						<div class='city'>moscow</div>
-						<a class='phone' href="tel:<?=lang('phone') ?>"><?=lang('phone') ?></a>
+						<div class='top-left-corner'>
+							<a id='logo' link='/'>Concretelab</a>
+							<div class='city'>moscow</div>
+							<a class='phone' href="tel:<?=lang('phone') ?>"><?=lang('phone') ?></a>
+						</div>
 						<?
 							(new Menu)->draw('top');
 						?>
