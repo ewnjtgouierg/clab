@@ -1,0 +1,65 @@
+<?
+
+$config = array (
+  'System*' => 
+  array (
+    'title' => 'System*',
+  ),
+  'My Admin Profile' => 
+  array (
+    'title' => 'My Admin Profile',
+  ),
+  'Backup' => 
+  array (
+    'title' => 'Backup',
+  ),
+  'Shortcuts' => 
+  array (
+    'title' => 'Shortcuts',
+  ),
+  'Configuration' => 
+  array (
+    'title' => 'Configuration',
+  ),
+  'Language' => 
+  array (
+    'title' => 'Language',
+  ),
+  'Access Control' => 
+  array (
+    'title' => 'Access Control',
+  ),
+  'Users' => 
+  array (
+    'title' => 'Users',
+  ),
+  'User Groups' => 
+  array (
+    'title' => 'User Groups',
+  ),
+  'Permissions' => 
+  array (
+    'title' => 'Permissions',
+  ),
+  'Pages' => 
+  array (
+    'title' => 'Pages',
+  ),
+  'Portfolio' => 
+  array (
+    'title' => 'Portfolio',
+  ),
+  'Feedback' => 
+  array (
+    'title' => 'Feedback',
+  ),
+  'Seo_Counters' => 
+  array (
+    'title' => 'Seo_Counters',
+  ),
+  'News' => 
+  array (
+    'title' => 'News',
+  ),
+);
+

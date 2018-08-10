@@ -1,0 +1,89 @@
+.
+	{
+		margin: 0 20%;
+	}
+#logo
+	{
+		color: gray;
+		font-size: 30px;
+		text-transform: uppercase;
+		font-weight: bold;
+		display: block;
+	}
+.city
+	{
+		display: block;
+		color: #2c5e76;
+		font-size: 20px;
+	}
+.slide .phone
+	{
+		color: #2c5e76;
+		display: block;
+	}
+#slideshow .text
+	{
+		padding: 20px;
+		color: white;
+		background: url('net-bg.png');
+	}
+#extra
+	{
+		padding: 20px;
+		color: white;
+		background: url('net-bg.png');
+		text-align: center;
+	}
+#extra>label
+	{
+		text-transform: uppercase;
+		font-weight: bold;
+		color: #2caae2;
+		font-size: 20px;
+		display: block;
+		margin-bottom: 20px;
+	}
+#extra .items
+	{
+		display: flex;
+		justify-content: space-around;
+	}
+#extra .items label
+	{
+		text-transform: uppercase;
+		font-size: 16px;
+		margin-bottom: 10px;
+		display: block;
+	}
+#extra .items>*
+	{
+		text-align: left;
+		width: 25%;
+	}
+.slide
+	{
+		background: url('slides/1.jpg');
+		height: 888px;
+	}
+#types
+	{
+		display: flex;
+		justify-content: space-around;
+	}
+#types>*:before
+	{
+		display: block;
+		content: url('thumb.png');
+		margin-bottom: 30px;
+	}
+#types>*
+	{
+		width: 227px;
+		color: gray;
+	}
+#types label,
+#types p
+	{
+		padding: 0 30px;
+		font-size: 12px;
+	}
