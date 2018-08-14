@@ -1,15 +1,32 @@
 .
 	{
-		margin: 0 20%;
+		margin: 0 auto;
+		width: 1280px;
 	}
 .top-left-corner
 	{
-		padding: 50px 0 0 50px;
+		padding: 25px 0 0 64px;
+	}
+#slideshow .menu
+	{
+		float: right;
+		text-transform: uppercase;
+		font-family: 'DIN Condensed Bold';
+		font-size: 17px;
+		line-height: 30px;
+		letter-spacing: 1px;
+		margin: 24px 85px 0 0;
+		text-align: right;
+	}
+#slideshow .menu a
+	{
+		color: #5f5f5f;
 	}
 #logo
 	{
 		font-family: 'EtelkaNarrowMedium';
-		font-size: 50px;
+		font-size: 49px;
+		letter-spacing: 3.5px;
 		color: #707070;
 		text-transform: uppercase;
 		display: block;
@@ -17,17 +34,23 @@
 .city
 	{
 		display: block;
-		color: #2c5e76;
-		font-size: 30px;
-		letter-spacing: 10px;
+		color: #146688;
+		font-size: 32px;
+		line-height: 31px;
+		letter-spacing: 7px;
 		font-family: 'PFDinDisplayPro-Regular';
 	}
 .slide .phone
 	{
-		font-size: 20px;
-		color: #2c5e76;
+		margin-top: 5px;
+		font-size: 22px;
+		color: #146688;
 		display: block;
 		font-family: 'PFDinDisplayPro-Regular';
+	}
+.slide .phone:first-letter
+	{
+		letter-spacing: -2px;
 	}
 #slideshow h1
 	{
@@ -76,21 +99,34 @@
 	}
 .slide
 	{
-		background: url('slides/1.jpg');
-		height: 888px;
+		background: url('slides/1.png') no-repeat;
+		height: 661px;
 	}
 #types
+	{
+		margin: 50px 0;
+	}
+#types .items
 	{
 		display: flex;
 		justify-content: space-around;
 	}
-#types>*:before
+#types .items>*:before
 	{
 		display: block;
 		content: url('thumb.png');
 		margin-bottom: 30px;
 	}
-#types>*
+#types .title
+	{
+		font-family: 'EtelkaNarrowMedium';
+		font-size: 25px;
+		letter-spacing: 5px;
+		text-align: center;
+		color: #2baae2;
+		text-transform: uppercase;
+	}
+#types .items>*
 	{
 		width: 227px;
 		color: gray;

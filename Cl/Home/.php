@@ -9,14 +9,14 @@ use Page_Content;
 				?>
 				<div id='slideshow'>
 					<div class='slide'>
+						<?
+							(new Menu)->draw('main');
+						?>
 						<div class='top-left-corner'>
 							<a id='logo' link='/'>Concretelab</a>
 							<div class='city'>moscow</div>
 							<a class='phone' href="tel:<?=lang('phone') ?>"><?=lang('phone') ?></a>
 						</div>
-						<?
-							(new Menu)->draw('top');
-						?>
 					</div>
 					<div class='text'>
 						<h1>Городское освещение</h1>
@@ -25,21 +25,24 @@ use Page_Content;
 					</div>
 				</div>
 				<div id='types'>
-					<div>
-						<label>Серый</label>
-						<p>Изделие изготовлено из серого цемента</p>
-					</div>
-					<div>
-						<label>Белый</label>
-						<p>Изделие изготовлено с применением белого цемента и белых минеральных наполнителей.</p>
-					</div>
-					<div>
-						<label>Песчаный</label>
-						<p>Изделие изготовлено с применением белого цемента и природных бежевых наполнителей.</p>
-					</div>
-					<div>
-						<label>Черный</label>
-						<p>Изделие изготовлено из серого цемента с добавлением минерального наполнителя в смесь</p>
+					<div class='title'>Цветовые решения</div>
+					<div class='items'>
+						<div>
+							<label>Серый</label>
+							<p>Изделие изготовлено из серого цемента</p>
+						</div>
+						<div>
+							<label>Белый</label>
+							<p>Изделие изготовлено с применением белого цемента и белых минеральных наполнителей.</p>
+						</div>
+						<div>
+							<label>Песчаный</label>
+							<p>Изделие изготовлено с применением белого цемента и природных бежевых наполнителей.</p>
+						</div>
+						<div>
+							<label>Черный</label>
+							<p>Изделие изготовлено из серого цемента с добавлением минерального наполнителя в смесь</p>
+						</div>
 					</div>
 				</div>
 				<div id='extra'>
