@@ -45,13 +45,13 @@
 .white .left p
 	{
 		display: flex;
-		align-items: top;
+		align-items: flex-start;
 		line-height: 1em;
 	}
-.white .left p:before
+.white .left img
 	{
-		content: url('watermark-small.png');
-		transform: scale(0.5);
+		width: 60px;
+		margin-right: 15px;
 	}
 .footer .white p,
 .footer .contacts
