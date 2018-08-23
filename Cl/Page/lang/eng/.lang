@@ -1,0 +1,6 @@
+<?
+
+$config = array (
+  'phone' => 'phone',
+);
+

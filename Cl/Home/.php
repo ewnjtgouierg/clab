@@ -9,9 +9,17 @@ use Page_Content;
 				?>
 				<div id='slideshow'>
 					<div class='slide'>
+						<div class='top-right'>
 						<?
 							(new Menu)->draw('main');
+							new Language_Switcher([
+								'languages' => [
+									'end' => 'English',
+									'ru' => 'Russian'
+										]
+									]);
 						?>
+						</div>
 						<div class='top-left-corner'>
 							<a id='logo' link='/'>Concretelab</a>
 							<div class='city'>moscow</div>
