@@ -12,5 +12,9 @@ $config = array (
   'Sand details' => 'Sand details',
   'Black' => 'Black',
   'Black details' => 'Black details',
+  'Shipping' => 'Shipping',
+  'Shipping details' => 'Shipping details',
+  'Installation' => 'Installation',
+  'Installation details' => 'Installation details',
 );
 

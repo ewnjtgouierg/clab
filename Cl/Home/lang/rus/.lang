@@ -12,5 +12,9 @@ $config = array (
   'White details' => 'Изделие изготовлено с применением белого цемента и белых минеральных наполнителей.',
   'Sand details' => 'Изделие изготовлено с применением белого цемента и природных бежевых наполнителей.',
   'Black details' => 'Изделие изготовлено из серого цемента с добавлением минерального наполнителя в смесь',
+  'Shipping' => 'Доставка',
+  'Shipping details' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+  'Installation' => 'Монтаж',
+  'Installation details' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
 );
 

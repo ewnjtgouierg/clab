@@ -67,12 +67,12 @@ use Page_Content;
 					<label><?=lang('Extras') ?></label>
 					<div class='items'>
 						<div>
-							<label>Доставка</label>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+							<label><?=lang('Shipping') ?></label>
+							<p><?=text('Shipping details') ?></p>
 						</div>
 						<div>
-							<label>Монтаж</label>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+							<label><?=lang('Installation') ?></label>
+							<p><?=text('Installation details') ?></p>
 						</div>
 					</div>
 				</div>
