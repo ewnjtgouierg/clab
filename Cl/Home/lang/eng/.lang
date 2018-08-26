@@ -2,5 +2,15 @@
 
 $config = array (
   'phone' => '+7 (495) 961–82–05',
+  'Extras' => 'Extras',
+  'Color solutions' => 'Color solutions',
+  'Gray' => 'Gray',
+  'Gray details' => 'Gray details',
+  'White' => 'White',
+  'White details' => 'White details',
+  'Sand' => 'Sand',
+  'Sand details' => 'Sand details',
+  'Black' => 'Black',
+  'Black details' => 'Black details',
 );
 

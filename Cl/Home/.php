@@ -6,55 +6,65 @@ use Page_Content;
 
 		function __construct()
 			{
+
 				?>
-				<div id='slideshow'>
-					<div class='slide'>
-						<div class='top-right'>
-						<?
-							(new Menu)->draw('main');
-							new Language_Switcher([
-								'languages' => [
-									'end' => 'English',
-									'ru' => 'Russian'
-										]
-									]);
-						?>
-						</div>
-						<div class='top-left-corner'>
-							<a id='logo' link='/'>Concretelab</a>
-							<div class='city'>moscow</div>
-							<a class='phone' href="tel:<?=lang('phone') ?>"><?=lang('phone') ?></a>
-						</div>
+				<div id='top'>
+					<?
+
+					new Control_Slideshow([
+							'transitionClass' => 'Animation_Slide',
+							'transitionIni' => [
+									'from' => 1,
+									'to' => 0,
+									'speed' => 0.001,
+									'acceleration' => 0.001,
+								],
+							'transitionResetIni' => [
+									'from' => 0,
+									'to' => 1,
+								],
+							'slides' => Slideshow_Data::i()->data(),
+							'drawButtons' => false,
+							'delay' => 2000,
+							'arrows' => true
+						]);
+
+					?>
+					<div class='top-right'>
+					<?
+						(new Menu)->draw('main');
+						new Language_Switcher;
+					?>
 					</div>
-					<div class='text'>
-						<h1>Городское освещение</h1>
-						<h2>комплексные решения</h2>
-						<p>Класс защиты встроенных светодиодных элементов IP65 соответствует требованиям, предъявляемым к уличным светильникам. Предлагаемое решение дополнит основное освещение локальными световыми и цветовыми пятнами. Массивность конструкции позволяет зонировать пространство в соответствии с потребностями заказчика.</p>
+					<div class='top-left-corner'>
+						<a id='logo' link='/'>Concretelab</a>
+						<div class='city'>moscow</div>
+						<a class='phone' href="tel:<?=lang('phone') ?>"><?=lang('phone') ?></a>
 					</div>
 				</div>
 				<div id='types'>
-					<div class='title'>Цветовые решения</div>
+					<div class='title'><?=lang('Color solutions') ?></div>
 					<div class='items'>
 						<div>
-							<label>Серый</label>
-							<p>Изделие изготовлено из серого цемента</p>
+							<label><?=lang('Gray') ?></label>
+							<p><?=text('Gray details') ?></p>
 						</div>
 						<div>
-							<label>Белый</label>
-							<p>Изделие изготовлено с применением белого цемента и белых минеральных наполнителей.</p>
+							<label><?=lang('White') ?></label>
+							<p><?=text('White details') ?></p>
 						</div>
 						<div>
-							<label>Песчаный</label>
-							<p>Изделие изготовлено с применением белого цемента и природных бежевых наполнителей.</p>
+							<label><?=lang('Sand') ?></label>
+							<p><?=text('Sand details') ?></p>
 						</div>
 						<div>
-							<label>Черный</label>
-							<p>Изделие изготовлено из серого цемента с добавлением минерального наполнителя в смесь</p>
+							<label><?=lang('Black') ?></label>
+							<p><?=text('Black details') ?></p>
 						</div>
 					</div>
 				</div>
 				<div id='extra'>
-					<label>Дополнительные услуги</label>
+					<label><?=lang('Extras') ?></label>
 					<div class='items'>
 						<div>
 							<label>Доставка</label>

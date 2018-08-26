@@ -1,0 +1,43 @@
+.slide
+	{
+		height: 661px;
+	}
+.text
+	{
+		font-family: 'DINPro-Light';
+		padding: 38px 0;
+		color: white;
+		background: url('net-bg.png');
+		text-align: center;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		min-height: 300px;
+	}
+.title
+	{
+		font-size: 28px;
+		text-transform: uppercase;
+		letter-spacing: 1.5px;
+		margin: 0 0 5px;
+	}
+.subtitle
+	{
+		font-size: 20px;
+		margin: 0 0 7px;
+	}
+.description
+	{
+		font-size: 20px;
+		font-weight: bold;
+		width: 60%;
+		text-align: justify;
+	}
+.previous:before
+	{
+		content: url('previous.png');
+	}
+.next:before
+	{
+		content: url('next.png');
+	}

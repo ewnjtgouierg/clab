@@ -1,14 +1,23 @@
+#top
+	{
+		position: relative;
+	}
 .top-left-corner
 	{
-		padding: 25px 0 0 64px;
+		z-index: 2;
+		position: absolute;
+		top: 25px;
+		left:  64px;
 	}
-#slideshow .top-right
+.top-right
 	{
-		padding: 24px 85px 0 0;
-		float: right;
+		z-index: 2;
+		position: absolute;
+		top: 24px;
+		right: 85px;
 	}
 .Language_Switcher,
-#slideshow .Menu
+#top .Menu
 	{
 		text-transform: uppercase;
 		font-family: 'DIN Condensed Bold';
@@ -18,7 +27,7 @@
 		text-align: right;
 	}
 .Language_Switcher a,
-#slideshow .Menu a
+#top .Menu a
 	{
 		color: #5f5f5f;
 	}
@@ -40,7 +49,7 @@
 		letter-spacing: 7px;
 		font-family: 'PFDinDisplayPro-Regular';
 	}
-.slide .phone
+#top .phone
 	{
 		margin-top: 5px;
 		font-size: 22px;
@@ -48,39 +57,9 @@
 		display: block;
 		font-family: 'PFDinDisplayPro-Regular';
 	}
-.slide .phone:first-letter
+#top .phone:first-letter
 	{
 		letter-spacing: -2px;
-	}
-#slideshow .text
-	{
-		font-family: 'DINPro-Light';
-		padding: 38px 0;
-		color: white;
-		background: url('net-bg.png');
-		text-align: center;
-		display: flex;
-		align-items: center;
-		flex-direction: column;
-	}
-#slideshow h1
-	{
-		font-size: 28px;
-		text-transform: uppercase;
-		letter-spacing: 1.5px;
-		margin: 0 0 5px;
-	}
-#slideshow h2
-	{
-		font-size: 20px;
-		margin: 0 0 7px;
-	}
-#slideshow p
-	{
-		font-size: 20px;
-		font-weight: bold;
-		width: 60%;
-		text-align: justify;
 	}
 #extra
 	{
@@ -126,11 +105,6 @@
 	{
 		text-align: left;
 		width: 25%;
-	}
-.slide
-	{
-		background: url('slides/1.png') no-repeat;
-		height: 661px;
 	}
 #types
 	{
