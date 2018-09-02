@@ -16,6 +16,16 @@
 		top: 24px;
 		right: 85px;
 	}
+.Language_Switcher span
+	{
+		display: none;
+	}
+.Language_Switcher>*:not(:first-child)
+	{
+		margin: 0;
+		padding: 0;
+		border: none;
+	}
 .Language_Switcher,
 #top .Menu
 	{
