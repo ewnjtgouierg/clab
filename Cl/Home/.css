@@ -2,19 +2,27 @@
 	{
 		position: relative;
 	}
-.top-left-corner
+.overlay
 	{
-		z-index: 2;
 		position: absolute;
-		top: 25px;
-		left:  64px;
+		top: 0;
+		left: 0;
+		width: 100%;
+		z-index: 2;
+		padding-top: 25px;
+		padding-bottom: 10px;
+		display: flex;
+		justify-content: space-between;
+		background: rgba(255, 255, 255, 0.15); 
 	}
-.top-right
+.overlay .left
 	{
-		z-index: 2;
-		position: absolute;
-		top: 24px;
-		right: 85px;
+		margin-top: 1px;
+		margin-left:  64px;
+	}
+.overlay .right
+	{
+		margin-right: 85px;
 	}
 .Language_Switcher span
 	{

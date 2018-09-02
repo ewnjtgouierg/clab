@@ -1,7 +1,24 @@
 .
 	{
+		width: 100%;
 		font-size: 0;
 /*			height: 661px;*/
+	}
+.slides
+	{
+		width: 100%;
+	}
+.image-crop
+	{
+		height: 661px !important;
+		overflow: hidden;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+.slides img
+	{
+		width: 100%;
 	}
 .text
 	{

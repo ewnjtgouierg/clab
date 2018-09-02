@@ -32,12 +32,15 @@ use Page_Content;
 							'slides' => function() {
 								foreach (Slideshow_Data::i()->data() as $t)
 									{
-										?><div><?
+										?><div>
+											<div class='image-crop'><?
 										Slideshow_Data::i()->table->form()->fields['image']->displayContent([
 											'value' => $t['image'],
 											'fullSize' => true
 												]);
-										?><div class='text'>
+										?>
+										</div>
+										<div class='text'>
 											<div class='title'><?=$t['title'] ?></div>
 											<div class='subtitle'><?=$t['subtitle'] ?></div>
 											<div class='description'><?=$t['text'] ?></div>
@@ -49,16 +52,18 @@ use Page_Content;
 						]);
 
 					?>
-					<div class='top-right'>
-					<?
-						(new Menu)->draw('main');
-						new Language_Switcher;
-					?>
-					</div>
-					<div class='top-left-corner'>
-						<a id='logo' link='/'>Concretelab</a>
-						<div class='city'>moscow</div>
-						<a class='phone' href="tel:<?=lang('phone') ?>"><?=lang('phone') ?></a>
+					<div class='overlay'>
+						<div class='left'>
+							<a id='logo' link='/'>Concretelab</a>
+							<div class='city'>moscow</div>
+							<a class='phone' href="tel:<?=lang('phone') ?>"><?=lang('phone') ?></a>
+						</div>
+						<div class='right'>
+						<?
+							(new Menu)->draw('main');
+							new Language_Switcher;
+						?>
+						</div>
 					</div>
 				</div>
 				<div id='types'>
