@@ -19,6 +19,9 @@ use Page_Content;
 									'speed' => 0.001,
 									'acceleration' => 0.001,
 								],
+							'transitionBackIni' => [
+									'from' => -1,
+								],
 							'transitionResetIni' => [
 									'from' => 0,
 									'to' => 1,
