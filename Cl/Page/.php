@@ -7,6 +7,8 @@ use Ini;
 		function drawBody()
 			{
 
+				?><a name='top'></a><?
+
 				$this->drawContent();
 
 				?>
@@ -27,7 +29,7 @@ use Ini;
 					</div>
 					<div class='gray'>
 						<div>Оригинальная авторская разработка concretelab.ru защищена патентом №XXXXXX от XX.XX.XXXX</div>
-						<img src='<?=_here() ?>/up.png'>
+						<a href='#top'><img src='<?=_here() ?>/up.png'></a>
 					</div>
 				</div>
 				<?
