@@ -1,6 +1,7 @@
-.slide
+.
 	{
-		height: 661px;
+		font-size: 0;
+/*			height: 661px;*/
 	}
 .text
 	{
@@ -32,6 +33,12 @@
 		font-weight: bold;
 		width: 60%;
 		text-align: justify;
+	}
+.previous,
+.next
+	{
+		top: auto;
+		bottom: 115px;
 	}
 .previous:before
 	{

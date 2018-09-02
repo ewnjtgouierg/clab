@@ -23,10 +23,26 @@ use Page_Content;
 									'from' => 0,
 									'to' => 1,
 								],
-							'slides' => Slideshow_Data::i()->data(),
 							'drawButtons' => false,
-							'delay' => 2000,
-							'arrows' => true
+							'delay' => 5000,
+							'arrows' => true,
+							'slides' => function() {
+								foreach (Slideshow_Data::i()->data() as $t)
+									{
+										?><div><?
+										Slideshow_Data::i()->table->form()->fields['image']->displayContent([
+											'value' => $t['image'],
+											'fullSize' => true
+												]);
+										?><div class='text'>
+											<div class='title'><?=$t['title'] ?></div>
+											<div class='subtitle'><?=$t['subtitle'] ?></div>
+											<div class='description'><?=$t['text'] ?></div>
+										</div>
+										</div><?
+									}
+							}
+
 						]);
 
 					?>
