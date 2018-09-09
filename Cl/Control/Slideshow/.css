@@ -2,15 +2,15 @@
 	{
 		width: 100%;
 		font-size: 0;
-/*			height: 661px;*/
+		height: 661px;
 	}
 .slides
 	{
-		width: 100%;
+		width: 100%;	
 	}
 .image-crop
 	{
-		height: 661px !important;
+		max-height: 661px !important;
 		overflow: hidden;
 		display: flex;
 		align-items: center;

@@ -2,16 +2,22 @@
 
 class Cl_Home
 	{
-use Page_Content;
+use Ini, Page_Content;
+var $__style = [[
+	'class' => __CLASS__,
+	'responsive' => [
+		'separate' => true
+			]
+		]];
 
-		function __construct()
+		function ___construct()
 			{
 
 				?>
 				<div id='top'>
 					<?
 
-					new Control_Slideshow([
+					$slideShow = new Control_Slideshow([
 							'transitionClass' => 'Animation_Slide',
 							'transitionIni' => [
 									'from' => 1,
@@ -51,6 +57,11 @@ use Page_Content;
 
 						]);
 
+					Events_JS::i()->add([
+						'object' => $slideShow->__jsObject(),
+						'type' => 'prepare',
+						'handler' => Cl_Home_Slideshow_JS::i()->__js__prepare_(),
+							]);
 					?>
 					<div class='overlay'>
 						<div class='left'>
@@ -60,7 +71,14 @@ use Page_Content;
 						</div>
 						<div class='right'>
 						<?
-							(new Menu)->draw('main');
+							(new Menu)->draw([
+								'selector' => 'main',
+								'styles' => [
+									'basic' => [
+										'responsive' => false
+											]
+										]
+									]);
 							new Language_Switcher;
 						?>
 						</div>

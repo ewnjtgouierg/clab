@@ -1,0 +1,10 @@
+.
+	{
+		height: auto;
+	}
+.slides,
+.slides>*,
+.image-crop
+	{
+		max-height: none;
+	}
