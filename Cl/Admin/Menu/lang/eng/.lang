@@ -61,5 +61,13 @@ $config = array (
   array (
     'title' => 'News',
   ),
+  'Slideshow' => 
+  array (
+    'title' => 'Slideshow',
+  ),
+  'Pages form' => 
+  array (
+    'title' => 'Pages form',
+  ),
 );
 

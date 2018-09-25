@@ -1,0 +1,9 @@
+<?
+
+$config = array (
+  'Slideshow' => 
+  array (
+    'title' => 'Slideshow',
+  ),
+);
+

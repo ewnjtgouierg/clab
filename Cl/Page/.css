@@ -13,9 +13,14 @@
 
 .footer .white
 	{
+		margin-top: -50px;
 		display: flex;
 		flex-wrap: wrap;
 		padding: 64px;
+	}
+.footer .white>*
+	{
+		margin-top: 50px;
 	}
 .footer .white>*:last-child
 	{

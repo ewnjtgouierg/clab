@@ -21,6 +21,14 @@
 		justify-content: space-between;
 		background: rgba(255, 255, 255, 0.15); 
 	}
+.watermark
+	{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 400px;
+		z-index: 3;
+	}
 .Language_Switcher span
 	{
 		display: none;
@@ -94,6 +102,7 @@
 	}
 #extra .items
 	{
+		margin-top: -20px;
 		font-weight: bold;
 		display: flex;
 		flex-wrap: wrap;
@@ -103,7 +112,7 @@
 #extra p
 	{
 		text-align: justify;
-		font-size: 18px;
+		font-size: 20px;
 	}
 #extra .items label
 	{
@@ -119,18 +128,19 @@
 	}
 #extra .items>*
 	{
+		margin-top: 20px;
 		text-align: left;
 	}
 #types
 	{
-		margin: 50px 0;
+		margin: 50px 64px;
 	}
 #types .items
 	{
+		margin-top: -50px;
 		display: flex;
 		flex-wrap: wrap;
-		justify-content: space-between;
-		padding: 50px 64px;
+		justify-content: space-around;
 	}
 #types .items>*:before
 	{
@@ -152,6 +162,7 @@
 	{
 		width: 227px;
 		color: gray;
+		margin-top: 50px;
 	}
 #types label,
 #types p

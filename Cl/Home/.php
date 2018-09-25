@@ -15,6 +15,7 @@ var $__style = [[
 
 				?>
 				<div id='top'>
+					<img class='watermark' src="<?=_here() ?>/watermark.png">
 					<?
 
 					$slideShow = new Control_Slideshow([
@@ -33,7 +34,7 @@ var $__style = [[
 									'to' => 1,
 								],
 							'drawButtons' => false,
-							'delay' => 5000,
+							'delay' => 1000,
 							'arrows' => true,
 							'slides' => function() {
 								foreach (Slideshow_Data::i()->data() as $t)

@@ -3,9 +3,13 @@
 		padding-left: 10px;
 		padding-right: 10px;
 	}
+.watermark
+	{
+		width: 50vw;
+	}
 #logo
 	{
-		font-size: 10vw;
+		font-size: 7vw;
 		line-height: 8vw;
 	}
 .city
