@@ -2,3 +2,11 @@
 	{
 		width: 25%;
 	}
+#extra .items
+	{
+		justify-content: center;
+	}
+#extra .items>*:first-of-type
+	{
+		margin-right: 50px;
+	}

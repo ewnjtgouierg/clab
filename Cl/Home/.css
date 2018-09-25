@@ -84,53 +84,6 @@
 	{
 		letter-spacing: -2px;
 	}
-#extra
-	{
-		padding: 30px;
-		color: white;
-		background: url('net-bg.png');
-		text-align: center;
-	}
-#extra>label
-	{
-		text-transform: uppercase;
-		font-weight: bold;
-		color: #2caae2;
-		font-size: 23px;
-		display: block;
-		margin-bottom: 30px;
-	}
-#extra .items
-	{
-		margin-top: -20px;
-		font-weight: bold;
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: center;
-		font-family: 'PFDinDisplayPro-Regular';
-	}
-#extra p
-	{
-		text-align: justify;
-		font-size: 20px;
-	}
-#extra .items label
-	{
-		text-align: center;
-		text-transform: uppercase;
-		font-size: 20px;
-		margin-bottom: 10px;
-		display: block;
-	}
-#extra .items>*:first-of-type
-	{
-		margin-right: 50px;
-	}
-#extra .items>*
-	{
-		margin-top: 20px;
-		text-align: left;
-	}
 #types
 	{
 		margin: 50px 64px;
@@ -178,4 +131,51 @@
 		text-transform: uppercase;
 		display: block;
 		margin-bottom: 10px;
+	}
+#extra
+	{
+		padding: 30px;
+		color: white;
+		background: url('net-bg.png');
+		text-align: center;
+	}
+#extra>label
+	{
+		text-transform: uppercase;
+		font-weight: bold;
+		color: #2caae2;
+		font-size: 23px;
+		display: block;
+		margin-bottom: 30px;
+	}
+#extra .items
+	{
+		margin-top: -20px;
+		font-weight: bold;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		font-family: 'PFDinDisplayPro-Regular';
+	}
+#extra p
+	{
+		text-align: justify;
+		font-size: 20px;
+	}
+#extra .items label
+	{
+		text-align: center;
+		text-transform: uppercase;
+		font-size: 20px;
+		margin-bottom: 10px;
+		display: block;
+	}
+#extra .items>*:first-of-type
+	{
+		margin-right: 50px;
+	}
+#extra .items>*
+	{
+		margin-top: 20px;
+		text-align: left;
 	}
