@@ -7,6 +7,11 @@
 	{
 		width: 100%;	
 	}
+.slides>*
+	{
+		display: flex;
+		flex-direction: column;
+	}
 .image-crop
 	{
 		max-height: 661px !important;
@@ -21,6 +26,7 @@
 	}
 .text
 	{
+		flex-grow: 2;
 		font-family: 'DINPro-Light';
 		padding: 38px 0;
 		color: white;

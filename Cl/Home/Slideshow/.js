@@ -17,6 +17,7 @@ Cl_Home_Slideshow = Class.extend
 		prepare: function(ini)
 			{
 				_this.slideshow = ini.event.object;
+				Events.i().add(_this.slideshow, 'transitionComplete', _this.setSize);
 				_this.setSize(true);
 			},
 		setSize: function(initial)
@@ -24,16 +25,16 @@ Cl_Home_Slideshow = Class.extend
 				_this.unlockSize(_this.slideshow.slidesContainer);
 				Css.i().setClass(_this.slideshow.slidesContainer, 'slides-absolute', false);
 				var activeSlide = _this.slideshow.slides[_this.slideshow.index];
-				var firstImage = activeSlide.querySelector('IMG');
-				firstImage.style.height = '';
+				var activeImage = activeSlide.querySelector('IMG');
+				activeImage.style.height = '';
 				_this.unlockSize(activeSlide);
-				_this.lockSize(_this.slideshow.slidesContainer, _this.activeSlide);
+				_this.lockSize(_this.slideshow.slidesContainer, activeSlide);
 				for (var i=0; i<_this.slideshow.slides.length; i++)
 					{
 						var img = _this.slideshow.slides[i].querySelector('IMG');
 						img.style.height = '';
-						_this.lockSize(_this.slideshow.slides[i], _this.slideshow.slidesContainer);
-						img.style.height = Math.max(img.offsetHeight, firstImage.offsetHeight) + 'px';
+						_this.lockSize(_this.slideshow.slides[i], activeSlide);
+						img.style.height = Math.max(img.offsetHeight, activeImage.offsetHeight) + 'px';
 					}
 				Css.i().setClass(_this.slideshow.slidesContainer, 'slides-absolute', true);
 			},
