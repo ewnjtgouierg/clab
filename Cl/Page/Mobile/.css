@@ -1,0 +1,21 @@
+.footer .white label
+	{
+		font-size: 10vw;
+	}
+.footer .white p,
+.footer .contacts div
+	{
+		font-size: 7vw;
+	}
+.white .left p
+	{
+		display: block;
+	}
+.white .left p img
+	{
+		float: left;
+	}
+.footer .gray
+	{
+		font-size: 7vw;
+	}

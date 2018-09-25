@@ -170,10 +170,6 @@
 		margin-bottom: 10px;
 		display: block;
 	}
-#extra .items>*:first-of-type
-	{
-		margin-right: 50px;
-	}
 #extra .items>*
 	{
 		margin-top: 20px;
