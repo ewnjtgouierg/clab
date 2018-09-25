@@ -34,7 +34,7 @@ var $__style = [[
 									'to' => 1,
 								],
 							'drawButtons' => false,
-							'delay' => 1000,
+							// 'delay' => 1000,
 							'arrows' => true,
 							'slides' => function() {
 								foreach (Slideshow_Data::i()->data() as $t)
