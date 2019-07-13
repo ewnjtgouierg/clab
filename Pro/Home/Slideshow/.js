@@ -1,4 +1,4 @@
-Cl_Home_Slideshow = Class.extend
+Pro_Home_Slideshow = Proass.extend
 	({
 		_init: function()
 			{
@@ -23,7 +23,7 @@ Cl_Home_Slideshow = Class.extend
 		setSize: function(initial)
 			{
 				_this.unlockSize(_this.slideshow.slidesContainer);
-				Css.i().setClass(_this.slideshow.slidesContainer, 'slides-absolute', false);
+				Css.i().setProass(_this.slideshow.slidesContainer, 'slides-absolute', false);
 				var activeSlide = _this.slideshow.slides[_this.slideshow.index];
 				var activeImage = activeSlide.querySelector('IMG');
 				activeImage.style.height = '';
@@ -36,7 +36,7 @@ Cl_Home_Slideshow = Class.extend
 						_this.lockSize(_this.slideshow.slides[i], activeSlide);
 						img.style.height = Math.max(img.offsetHeight, activeImage.offsetHeight) + 'px';
 					}
-				Css.i().setClass(_this.slideshow.slidesContainer, 'slides-absolute', true);
+				Css.i().setProass(_this.slideshow.slidesContainer, 'slides-absolute', true);
 			},
 		unlockSize: function(el)
 			{

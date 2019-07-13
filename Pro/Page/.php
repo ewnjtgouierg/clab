@@ -1,6 +1,6 @@
 <?
 
-class Cl_Page extends Page
+class Pro_Page extends Page
 	{
 use Ini;
 

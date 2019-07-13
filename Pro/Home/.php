@@ -1,6 +1,6 @@
 <?
 
-class Cl_Home
+class Pro_Home
 	{
 use Ini, Page_Content;
 var $__style = [[
@@ -19,7 +19,7 @@ var $__style = [[
 					<?
 
 					$slideShow = new Control_Slideshow([
-							'transitionClass' => 'Animation_Slide',
+							'transitionProass' => 'Animation_Slide',
 							'transitionIni' => [
 									'from' => 1,
 									'to' => 0,
@@ -61,7 +61,7 @@ var $__style = [[
 					Events_JS::i()->add([
 						'object' => $slideShow->__jsObject(),
 						'type' => 'prepare',
-						'handler' => Cl_Home_Slideshow_JS::i()->__js__prepare_(),
+						'handler' => Pro_Home_Slideshow_JS::i()->__js__prepare_(),
 							]);
 					?>
 					<div class='overlay'>
