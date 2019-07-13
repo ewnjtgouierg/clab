@@ -52,14 +52,14 @@
 .Language_Switcher a,
 #top .Menu a
 	{
-		color: #ffffff5c;
+		color: #ffffff7c;
 	}
 #logo
 	{
 		font-family: 'EtelkaNarrowMedium';
 		font-size: 49px;
 		letter-spacing: 3.5px;
-		color: #ffffff5c;
+		color: #ffffff7c;
 		text-transform: uppercase;
 		display: block;
 	}
