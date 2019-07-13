@@ -1,50 +1,8 @@
 <?
 
 $config = [
-	'__all' => [
-			'permissions' => [
-					'all' => 'rli',
-				],
-		],
 	'menu_option' => [
-			'title' => 'Menu option',
-			'inlist' => 1,
-			'edit_in_list' => 1,
-			'be_width' => 200,
-			'class' => 'Field_Input',
 			'multilingual' => 1,
-		],
-	'url' => [
-			'title' => 'URL',
-			'inlist' => 1,
-			'edit_in_list' => 1,
-			'quick_list' => 'menu_option',
-			'be_width' => 300,
-			'class' => 'Field_Url',
-		],
-	'caption' => [
-			'title' => 'Заголовок на странице',
-			'inlist' => 1,
-			'edit_in_list' => 1,
-			'class' => 'Field_Input',
-		],
-	'content' => [
-			'title' => 'Content',
-			'height' => 500,
-			'type' => 'text',
-			'be_width' => 300,
-			'class' => 'Field_Textarea_Wysiwyg',
-		],
-	'tag_title' => [
-			'title' => 'Тег TITLE',
-			'be_width' => 150,
-			'class' => 'Field_Input',
-		],
-	'description' => [
-			'title' => 'Тег DESCRIPTION',
-			'type' => 'mediumtext',
-			'be_width' => 200,
-			'class' => 'Field_Textarea',
 		],
 	'keywords' => [
 			'title' => 'Тег KEYWORDS',
@@ -52,39 +10,5 @@ $config = [
 			'be_width' => 150,
 			'class' => 'Field_Textarea',
 		],
-	'in_main_menu' => [
-			'title' => 'В главном меню',
-			'type' => 'tinyint',
-			'default' => '1',
-			'class' => 'Field_Checkbox',
-		],
-	'in_middle_menu' => [
-			'title' => 'В меню услуг',
-			'type' => 'tinyint',
-			'default' => '0',
-			'class' => 'Field_Checkbox',
-		],
 	'in_footer_menu' => null,
-	'news_block' => [
-			'title' => 'Новостной блок',
-			'type' => 'tinyint',
-			'default' => '1',
-			'class' => 'Field_Checkbox',
-		],
-	'url_pattern' => [
-			'title' => 'URL pattern',
-			'crucial' => 1,
-			'be_width' => 100,
-			'class' => 'Field_Input',
-		],
-	'parent' => [
-			'title' => 'Parent',
-			'type' => 'int',
-			'block' => 'Page',
-		],
-	'image' => [
-			'title' => 'Image',
-			'class' => 'Field_Upload_Image',
-		],
 ];
-
