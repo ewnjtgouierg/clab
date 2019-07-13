@@ -50,7 +50,7 @@ var $__style = [[
 										<div class='text'>
 											<div class='title'><?=$t['title'] ?></div>
 											<div class='subtitle'><?=$t['subtitle'] ?></div>
-											<div class='description'><?=$t['text'] ?></div>
+											<div class='description'><?=$t['description'] ?></div>
 										</div>
 										</div><?
 									}
