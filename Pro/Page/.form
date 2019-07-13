@@ -64,6 +64,7 @@ $config = [
 			'default' => '0',
 			'class' => 'Field_Checkbox',
 		],
+	'in_footer_menu' => null,
 	'news_block' => [
 			'title' => 'Новостной блок',
 			'type' => 'tinyint',
