@@ -1,0 +1,9 @@
+<?
+
+$config = [
+	'__all' => [
+			'admin' => false,
+		],
+		'image' => null,
+		'last_name' => null
+	];
