@@ -1,143 +1,89 @@
 <?
 
-$config = array (
-  1 => 
-  array (
-    'id' => 1,
-    'pos' => 2,
-    'name' => 'url',
-    'title' => 'URL',
-    'inlist' => 1,
-    'edit_in_list' => 1,
-    'quick_list' => 'menu_option',
-    'be_width' => 300,
-    'class' => 'Field_Url',
-  ),
-  2 => 
-  array (
-    'id' => 2,
-    'pos' => 6,
-    'name' => 'content',
-    'title' => 'Content',
-    'height' => 500,
-    'type' => 'text',
-    'be_width' => 300,
-    'class' => 'Field_Textarea_Wysiwyg',
-  ),
-  3 => 
-  array (
-    'id' => 3,
-    'pos' => 1,
-    'name' => 'menu_option',
-    'title' => 'Menu option',
-    'inlist' => 1,
-    'edit_in_list' => 1,
-    'be_width' => 200,
-    'class' => 'Field_Input',
-    'multilingual' => 1,
-  ),
-  5 => 
-  array (
-    'id' => 5,
-    'pos' => 8,
-    'name' => 'keywords',
-    'title' => 'Тег KEYWORDS',
-    'type' => 'text',
-    'be_width' => 150,
-    'class' => 'Field_Textarea',
-  ),
-  6 => 
-  array (
-    'id' => 6,
-    'pos' => 6,
-    'name' => 'tag_title',
-    'title' => 'Тег TITLE',
-    'be_width' => 150,
-    'class' => 'Field_Input',
-  ),
-  7 => 
-  array (
-    'id' => 7,
-    'pos' => 10,
-    'name' => 'in_main_menu',
-    'title' => 'В главном меню',
-    'type' => 'tinyint',
-    'default' => '1',
-    'class' => 'Field_Checkbox',
-  ),
-  9 => 
-  array (
-    'id' => 9,
-    'pos' => 11,
-    'name' => 'in_middle_menu',
-    'title' => 'В меню услуг',
-    'type' => 'tinyint',
-    'default' => '0',
-    'class' => 'Field_Checkbox',
-  ),
-  10 => 
-  array (
-    'id' => 10,
-    'pos' => 12,
-    'name' => 'news_block',
-    'title' => 'Новостной блок',
-    'type' => 'tinyint',
-    'default' => '1',
-    'class' => 'Field_Checkbox',
-  ),
-  11 => 
-  array (
-    'id' => 11,
-    'pos' => 13,
-    'name' => 'url_pattern',
-    'title' => 'URL pattern',
-    'crucial' => 1,
-    'be_width' => 100,
-    'class' => 'Field_Input',
-  ),
-  12 => 
-  array (
-    'id' => 12,
-    'pos' => 7,
-    'name' => 'description',
-    'title' => 'Тег DESCRIPTION',
-    'type' => 'mediumtext',
-    'be_width' => 200,
-    'class' => 'Field_Textarea',
-  ),
-  13 => 
-  array (
-    'id' => 13,
-    'pos' => 5,
-    'name' => 'caption',
-    'title' => 'Заголовок на странице',
-    'inlist' => 1,
-    'edit_in_list' => 1,
-    'class' => 'Field_Input',
-  ),
-  15 => 
-  array (
-    'id' => 15,
-    'pos' => 15,
-    'name' => 'parent',
-    'title' => 'Parent',
-    'type' => 'int',
-    'block' => 'Page',
-  ),
-  16 => 
-  array (
-    'id' => 16,
-    'pos' => 16,
-    'name' => 'image',
-    'title' => 'Image',
-    'class' => 'Field_Upload_Image',
-  ),
-  '__all' => 
-  array (
-    'permissions' => 
-    array (
-      'all' => 'rli',
-    ),
-  ),
-);
+$config = [
+	'__all' => [
+			'permissions' => [
+					'all' => 'rli',
+				],
+		],
+	'menu_option' => [
+			'title' => 'Menu option',
+			'inlist' => 1,
+			'edit_in_list' => 1,
+			'be_width' => 200,
+			'class' => 'Field_Input',
+			'multilingual' => 1,
+		],
+	'url' => [
+			'title' => 'URL',
+			'inlist' => 1,
+			'edit_in_list' => 1,
+			'quick_list' => 'menu_option',
+			'be_width' => 300,
+			'class' => 'Field_Url',
+		],
+	'caption' => [
+			'title' => 'Заголовок на странице',
+			'inlist' => 1,
+			'edit_in_list' => 1,
+			'class' => 'Field_Input',
+		],
+	'content' => [
+			'title' => 'Content',
+			'height' => 500,
+			'type' => 'text',
+			'be_width' => 300,
+			'class' => 'Field_Textarea_Wysiwyg',
+		],
+	'tag_title' => [
+			'title' => 'Тег TITLE',
+			'be_width' => 150,
+			'class' => 'Field_Input',
+		],
+	'description' => [
+			'title' => 'Тег DESCRIPTION',
+			'type' => 'mediumtext',
+			'be_width' => 200,
+			'class' => 'Field_Textarea',
+		],
+	'keywords' => [
+			'title' => 'Тег KEYWORDS',
+			'type' => 'text',
+			'be_width' => 150,
+			'class' => 'Field_Textarea',
+		],
+	'in_main_menu' => [
+			'title' => 'В главном меню',
+			'type' => 'tinyint',
+			'default' => '1',
+			'class' => 'Field_Checkbox',
+		],
+	'in_middle_menu' => [
+			'title' => 'В меню услуг',
+			'type' => 'tinyint',
+			'default' => '0',
+			'class' => 'Field_Checkbox',
+		],
+	'news_block' => [
+			'title' => 'Новостной блок',
+			'type' => 'tinyint',
+			'default' => '1',
+			'class' => 'Field_Checkbox',
+		],
+	'url_pattern' => [
+			'title' => 'URL pattern',
+			'crucial' => 1,
+			'be_width' => 100,
+			'class' => 'Field_Input',
+		],
+	'parent' => [
+			'title' => 'Parent',
+			'type' => 'int',
+			'block' => 'Page',
+		],
+	'image' => [
+			'title' => 'Image',
+			'class' => 'Field_Upload_Image',
+		],
+];
 

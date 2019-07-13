@@ -1,73 +1,43 @@
 <?
 
-$config = array (
-  1 => 
-  array (
-    'id' => 1,
-    'pos' => 1,
-    'name' => 'title',
-    'title' => 'Заголовок',
-    'class' => 'Field_Input',
-    'inlist' => 1,
-  ),
-  2 => 
-  array (
-    'id' => 2,
-    'pos' => 3,
-    'name' => 'date',
-    'title' => 'Дата',
-    'class' => 'Field_Date',
-    'type' => 'int',
-    'inlist' => 1,
-  ),
-  3 => 
-  array (
-    'id' => 3,
-    'pos' => 4,
-    'name' => 'content',
-    'title' => 'Содержание',
-    'class' => 'Field_Textarea_Wysiwyg',
-    'type' => 'text',
-  ),
-  4 => 
-  array (
-    'id' => 4,
-    'pos' => 2,
-    'name' => 'url',
-    'title' => 'URL',
-    'class' => 'Field_Url',
-  ),
-  5 => 
-  array (
-    'id' => 5,
-    'pos' => 5,
-    'name' => 'tag_title',
-    'title' => 'Tag Title',
-    'class' => 'Field_Input',
-  ),
-  6 => 
-  array (
-    'id' => 6,
-    'pos' => 6,
-    'name' => 'tag_keywords',
-    'title' => 'Tag Keywords',
-    'class' => 'Field_Textarea',
-  ),
-  7 => 
-  array (
-    'id' => 7,
-    'pos' => 7,
-    'name' => 'tag_description',
-    'title' => 'Tag Description',
-    'class' => 'Field_Textarea',
-    'size' => '1024',
-  ),
-  '__all' => 
-  array (
-    'permissions' => 
-    array (
-      'all' => 'rli',
-    ),
-  ),
-);
+$config = [
+	'__all' => [
+			'permissions' => [
+					'all' => 'rli',
+				],
+		],
+	'title' => [
+			'title' => 'Заголовок',
+			'class' => 'Field_Input',
+			'inlist' => 1,
+		],
+	'url' => [
+			'title' => 'URL',
+			'class' => 'Field_Url',
+		],
+	'date' => [
+			'title' => 'Дата',
+			'class' => 'Field_Date',
+			'type' => 'int',
+			'inlist' => 1,
+		],
+	'content' => [
+			'title' => 'Содержание',
+			'class' => 'Field_Textarea_Wysiwyg',
+			'type' => 'text',
+		],
+	'tag_title' => [
+			'title' => 'Tag Title',
+			'class' => 'Field_Input',
+		],
+	'tag_keywords' => [
+			'title' => 'Tag Keywords',
+			'class' => 'Field_Textarea',
+		],
+	'tag_description' => [
+			'title' => 'Tag Description',
+			'class' => 'Field_Textarea',
+			'size' => '1024',
+		],
+];
 
