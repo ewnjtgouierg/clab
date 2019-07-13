@@ -1,0 +1,14 @@
+<?
+
+$config = [
+	'title' => [
+			'multilingual' => true,
+		],
+	'subtitle' => [
+			'multilingual' => true,
+		],
+	'description' => [
+			'multilingual' => true,
+		],
+];
+
