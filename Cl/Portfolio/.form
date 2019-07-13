@@ -62,5 +62,12 @@ $config = array (
     'class' => 'Field_Textarea',
     'size' => '1024',
   ),
+  '__all' => 
+  array (
+    'permissions' => 
+    array (
+      'all' => 'rli',
+    ),
+  ),
 );
 

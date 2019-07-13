@@ -37,11 +37,11 @@ var $__style = [[
 							// 'delay' => 1000,
 							'arrows' => true,
 							'slides' => function() {
-								foreach (Slideshow_Data::i()->data() as $t)
+								foreach (Control_Slideshow_Data::i()->data() as $t)
 									{
 										?><div>
 											<div class='image-crop'><?
-										Slideshow_Data::i()->table->form()->fields['image']->displayContent([
+										Control_Slideshow_Data::i()->table->form()->fields['image']->displayContent([
 											'value' => $t['image'],
 											'fullSize' => true
 												]);

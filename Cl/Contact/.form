@@ -125,5 +125,12 @@ $config = array (
     'filters' => NULL,
     'class' => 'Field_Checkbox',
   ),
+  '__all' => 
+  array (
+    'permissions' => 
+    array (
+      'all' => 'a',
+    ),
+  ),
 );
 

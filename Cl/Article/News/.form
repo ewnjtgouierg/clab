@@ -86,5 +86,14 @@ $config = array (
     'size' => '1024',
     'class' => 'Field_Textarea',
   ),
+  '__all' => 
+  array (
+    'permissions' => 
+    array (
+      'all' => 'rli',
+      'admin' => 'rwad',
+      'moderator' => 'rwad',
+    ),
+  ),
 );
 

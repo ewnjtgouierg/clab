@@ -122,7 +122,7 @@ $config = array (
     'name' => 'parent',
     'title' => 'Parent',
     'type' => 'int',
-    'block' => 2765,
+    'block' => 'Page',
   ),
   16 => 
   array (
@@ -131,6 +131,13 @@ $config = array (
     'name' => 'image',
     'title' => 'Image',
     'class' => 'Field_Upload_Image',
+  ),
+  '__all' => 
+  array (
+    'permissions' => 
+    array (
+      'all' => 'rli',
+    ),
   ),
 );
 
