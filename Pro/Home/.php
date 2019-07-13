@@ -19,7 +19,7 @@ var $__style = [[
 					<?
 
 					$slideShow = new Control_Slideshow([
-							'transitionProass' => 'Animation_Slide',
+							'transitionClass' => 'Animation_Slide',
 							'transitionIni' => [
 									'from' => 1,
 									'to' => 0,
