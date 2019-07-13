@@ -1,10 +1,10 @@
-@loadFont('DINPro-Light', 'fonts/DINPro-Light');
-@loadFont('PFDinDisplayPro-Regular', 'fonts/DINPro-Light');
-@loadFont('EtelkaNarrowMedium', 'fonts/EtelkaNarrowMedium');
-@loadFont('DIN Condensed Bold', 'fonts/DIN Condensed Bold');
-@loadFont('PTSansBold', 'fonts/PTSans/Bold');
-@loadFont('PTSans', 'fonts/PTSans/Regular');
-@loadFont('PTSansNarrow', 'fonts/PTSans/Narrow');
+@loadFont('DINPro-Light', 'fonts/DINPro-Light/.otf');
+@loadFont('PFDinDisplayPro-Regular', 'fonts/DINPro-Light/.otf');
+@loadFont('EtelkaNarrowMedium', 'fonts/EtelkaNarrowMedium/.otf');
+@loadFont('DIN Condensed Bold', 'fonts/DIN Condensed Bold/.ttf');
+@loadFont('PTSansBold', 'fonts/PTSans/Bold/.ttf');
+@loadFont('PTSans', 'fonts/PTSans/Regular/.ttf');
+@loadFont('PTSansNarrow', 'fonts/PTSans/Narrow/.ttf');
 
 .
 	{
