@@ -5,5 +5,6 @@ $config = [
 			'admin' => false,
 		],
 		'image' => null,
-		'last_name' => null
+		'last_name' => null,
+		'activated' => null,
 	];
